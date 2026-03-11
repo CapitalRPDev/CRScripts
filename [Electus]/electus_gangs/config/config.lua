@@ -1,15 +1,15 @@
 Config = {}
 
-Config.Framework = "qbox" -- "auto", "esx", "qbcore", "qbox"
-Config.Inventory = "ox_inventory" -- "auto", "ox_inventory", "core", "qs-inventory", "tgiann", "esx", "qb-core", "codem", "qb-inventory" (if it doesnt work test "esx" or "qb-core")
-Config.TargetSystem = "ox_target" -- "qtarget", "ox_target", "qb-target" and more
-Config.Target = "true" -- "auto", true, false
-Config.NotificationSystem = "ox_lib" -- "auto" | "framework" | "ox_lib" | "gta"
-Config.MenuSystem = "ox_lib_menu" -- "auto" | "ox_lib_menu" | "ox_lib_context" | "esx_menu_default" | "esx_context"
-Config.HelpTextStyle = "ox_lib" -- "auto" | "ox_lib" | "okokTextUI" | "jg-textui" | "cd_drawtextui" | "gta"
+Config.Framework = "auto" -- "auto", "esx", "qbcore", "qbox"
+Config.Inventory = "auto" -- "auto", "ox_inventory", "core", "qs-inventory", "tgiann", "esx", "qb-core", "codem", "qb-inventory" (if it doesnt work test "esx" or "qb-core")
+Config.TargetSystem = "qtarget" -- "qtarget", "ox_target", "qb-target" and more
+Config.Target = "auto" -- "auto", true, false
+Config.NotificationSystem = "auto" -- "auto" | "framework" | "ox_lib" | "gta"
+Config.MenuSystem = "auto" -- "auto" | "ox_lib_menu" | "ox_lib_context" | "esx_menu_default" | "esx_context"
+Config.HelpTextStyle = "auto" -- "auto" | "ox_lib" | "okokTextUI" | "jg-textui" | "cd_drawtextui" | "gta"
 
 Config.Locale = "en"
-Config.Debug = true
+Config.Debug = false
 
 -- if you change KeyActions the Key must also be avaliable in Keys table.
 Config.KeyActions = {
@@ -48,7 +48,7 @@ Config.MaxMembers = 2
 Config.DirtyCashItem = "black_money" -- false (common for esx) or e.g "black_money" or "markedbills"
 
 Config.GangShop = {
-	enabled = false,
+	enabled = true,
 	coords = { x = 357.22, y = -1809.56, z = 28.6 },
 	price = 100000,
 	canPurchaseWithoutSafehouse = true,
@@ -66,10 +66,10 @@ Config.ConnectedZones = {
 Config.Zones = {
 	-- If set to false other's safehouses will not be shown on the map
 	-- Note: setting this to false will automatically disable safehouse raids
-	showSafehousesOnMap = false,
+	showSafehousesOnMap = true,
 	canTransferZones = true,
 
-	hideZonesFromGangsWithoutSafehouse = true, -- recommended to true if you have connected zones enabled (otherwise it will just show empty map)
+	hideZonesFromGangsWithoutSafehouse = false, -- recommended to true if you have connected zones enabled (otherwise it will just show empty map)
 
 	respect = { -- respect is gained every day as long as the gang controlls the zone
 		min = 0,
@@ -87,9 +87,9 @@ Config.Zones = {
 
 Config.Attacks = {
 	maxAttacks = 3, -- maximum number of attacks a gang can have active at the same time
-	preperationTime = 0,0833333, -- time before the raid/capture is going live (in hours)
+	preperationTime = 1, -- time before the raid/capture is going live (in hours)
 	durationTime = 60, -- in minutes how long the raid/capture will last
-	minimumGangMembersOnline = 2, -- -1 to disable, minimum number of gang members online (defenders) to start an attack
+	minimumGangMembersOnline = -1, -- -1 to disable, minimum number of gang members online (defenders) to start an attack
 	raid = {
 		enable = true, -- enable raids
 		doors = {
@@ -161,7 +161,7 @@ Config.GangMenu = { -- ways to open gang menu
 }
 
 Config.Garage = {
-	garageSystem = "cd_garage", -- "esx_garage", "jg-advancedgarages", "qb-garages", "cd_garage"
+	garageSystem = "jg-advancedgarages", -- "esx_garage", "jg-advancedgarages", "qb-garages", "cd_garage"
 	enableGangGarage = true,
 	enablePersonalGarage = true,
 }

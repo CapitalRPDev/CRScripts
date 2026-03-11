@@ -4,7 +4,7 @@ Config.Markers = {
 		width = 2.0,
 		height = 1.0,
 		draw = true,
-		color = { r = 0, g = 174, b = 255, a = 200 },
+		color = { r = 255, g = 255, b = 255, a = 200 },
 		type = 23,
 		blip = {
 			sprite = 357,
@@ -18,7 +18,7 @@ Config.Markers = {
 		width = 2.0,
 		height = 1.0,
 		draw = true,
-		color = { r = 0, g = 174, b = 255, a = 200 },
+		color = { r = 255, g = 255, b = 255, a = 200 },
 		type = 23,
 		blip = {
 			sprite = 501,
@@ -32,7 +32,7 @@ Config.Markers = {
 		width = 2.0,
 		height = 1.0,
 		draw = true,
-		color = { r = 0, g = 174, b = 255, a = 200 },
+		color = { r = 255, g = 255, b = 255, a = 200 },
 		type = 23,
 		blip = {
 			sprite = 40,
@@ -46,7 +46,7 @@ Config.Markers = {
 		width = 2.0,
 		height = 1.0,
 		draw = true,
-		color = { r = 0, g = 174, b = 255, a = 200 },
+		color = { r = 255, g = 255, b = 255, a = 200 },
 		type = 23,
 		blip = {
 			sprite = 40,
@@ -60,7 +60,7 @@ Config.Markers = {
 		width = 2.0,
 		height = 1.0,
 		draw = true,
-		color = { r = 0, g = 174, b = 255, a = 200 },
+		color = { r = 255, g = 255, b = 255, a = 200 },
 		type = 23,
 		blip = {
 			sprite = 40,
@@ -74,7 +74,7 @@ Config.Markers = {
 		width = 2.0,
 		height = 1.0,
 		draw = true,
-		color = { r = 0, g = 174, b = 255, a = 200 },
+		color = { r = 255, g = 255, b = 255, a = 200 },
 		type = 23,
 		blip = {
 			sprite = 478,
@@ -88,7 +88,7 @@ Config.Markers = {
 		width = 2.0,
 		height = 1.0,
 		draw = true,
-		color = { r = 0, g = 174, b = 255, a = 200 },
+		color = { r = 255, g = 255, b = 255, a = 200 },
 		type = 23,
 		blip = {
 			sprite = 500,
@@ -102,21 +102,21 @@ Config.Markers = {
 		width = 2.0,
 		height = 1.0,
 		draw = true,
-		color = { r = 0, g = 174, b = 255, a = 200 },
+		color = { r = 255, g = 255, b = 255, a = 200 },
 		type = 23,
 	},
 	capture = {
 		width = 75.0,
 		height = 50.0,
 		draw = true,
-		color = { r = 0, g = 174, b = 255, a = 50 },
+		color = { r = 200, g = 0, b = 0, a = 50 },
 		type = 1,
 	},
 	exitIpl = {
 		width = 1.5,
 		height = 1.0,
 		draw = true,
-		color = { r = 0, g = 174, b = 255, a = 200 },
+		color = { r = 255, g = 255, b = 255, a = 200 },
 		type = 23,
 	},
 }

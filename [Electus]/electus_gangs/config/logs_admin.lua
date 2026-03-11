@@ -1,4 +1,4 @@
 Config.AdminLogs = {
-	enabled = true,
+	enabled = false,
 	service = "discord", -- "ox_lib", "fivemanage", "discord"
 }
