@@ -1,6 +1,6 @@
 Config = {}
-Config.Framework = "esx" -- "esx", "qbx" or "qb"
-Config.Inventory = "qs" -- "esx", "qb", "core", "qs", "tgiann", "ox_inventory", "qb-inventory", "codem"
+Config.Framework = "qbx" -- "esx", "qbx" or "qb"
+Config.Inventory = "ox_inventory" -- "esx", "qb", "core", "qs", "tgiann", "ox_inventory", "qb-inventory", "codem"
 Config.Locale = "en"
 Config.UploadService = "lb-upload" -- "lb-upload" or "fivemanage"
 

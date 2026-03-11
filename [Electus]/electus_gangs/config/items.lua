@@ -7,4 +7,4 @@ Config.Items = {
 	water = "water",
 }
 
-Config.TabletItem = false -- false or "gang_tablet" or other item
+Config.TabletItem = "gang_tablet" -- false or "gang_tablet" or other item
