@@ -1,0 +1,1 @@
+ALTER TABLE electus_gangs_zone_attacks MODIFY COLUMN activation_time BIGINT;

@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: transparent;
+    color: #e4e4e7;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3e 100%);
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5vh 2.5vw;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header h1 {
+    font-size: 2vw;
+    font-weight: 700;
+    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.close-btn {
+    background: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+    width: 2.5vw;
+    height: 2.5vw;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 0.4vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.1vh 0.3vh rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.close-btn:hover {
+    background: rgba(239, 68, 68, 0.15);
+    border-color: rgba(239, 68, 68, 0.4);
+    transform: scale(1.08) rotate(90deg);
+    box-shadow: 0 0.2vh 0.6vh rgba(239, 68, 68, 0.3);
+    color: #ff6b6b;
+}
+
+.close-btn:active {
+    transform: scale(0.95) rotate(90deg);
+}
+
+.content {
+    padding: 2.5vh 2.5vw;
+    max-height: calc(100vh - 12vh);
+    overflow-y: auto;
+}
+
+.content::-webkit-scrollbar {
+    width: 0.3vw;
+}
+
+.content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 0.15vw;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.section {
+    margin-bottom: 2.5vh;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0.6vw;
+    padding: 2vh 2vw;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    background: rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.08);
+    transform: translateY(-0.1vh);
+}
+
+.section h2 {
+    font-size: 1.4vw;
+    font-weight: 600;
+    margin-bottom: 1.8vh;
+    color: #a78bfa;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2vh;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2vh 1.2vw;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 0.4vw;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease;
+}
+
+.info-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(0.2vw);
+}
+
+.label {
+    font-weight: 500;
+    color: #9ca3af;
+    font-size: 1vw;
+}
+
+.value {
+    font-weight: 600;
+    color: #e4e4e7;
+    font-size: 1vw;
+}
+
+.mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.95vw;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.5vh 0.7vw;
+    border-radius: 0.3vw;
+}
+
+.code-block {
+    position: relative;
+    background: linear-gradient(135deg, #18181b 0%, #1a1a1d 100%);
+    border-radius: 0.5vw;
+    padding: 2vh 2vw;
+    padding-top: 1vh;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0.2vh 0.5vh rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.code-block:hover {
+    border-color: rgba(96, 165, 250, 0.3);
+    box-shadow: inset 0 0.2vh 0.5vh rgba(0, 0, 0, 0.3), 0 0 1vh rgba(96, 165, 250, 0.1);
+}
+
+.code-block pre {
+    margin: 0;
+    margin-top: 7vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 22vh;
+    padding-right: 0.8vw;
+}
+
+.code-block pre::-webkit-scrollbar {
+    height: 0.3vw;
+    width: 0.3vw;
+}
+
+.code-block pre::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.code-block pre::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 0.15vw;
+}
+
+.code-block pre::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.code-block code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.95vw;
+    line-height: 1.7;
+    color: #e4e4e7;
+    display: block;
+    white-space: pre;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 1.2vh;
+    right: 1.2vw;
+    background: rgba(96, 165, 250, 0.1);
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    color: #60a5fa;
+    padding: 1vh 1.5vw;
+    border-radius: 0.4vw;
+    font-size: 0.95vw;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.copy-btn:hover {
+    background: rgba(96, 165, 250, 0.2);
+    border-color: rgba(96, 165, 250, 0.5);
+    transform: translateY(-0.1vh);
+    box-shadow: 0 0.2vh 0.5vh rgba(96, 165, 250, 0.2);
+}
+
+.copy-btn:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.copy-btn.copied {
+    background: rgba(34, 197, 94, 0.2);
+    border-color: rgba(34, 197, 94, 0.5);
+    color: #22c55e;
+}
+
+/* Syntax Highlighting Colors */
+.code-keyword {
+    color: #c678dd;
+}
+
+.code-function {
+    color: #61afef;
+}
+
+.code-string {
+    color: #98c379;
+}
+
+.code-number {
+    color: #d19a66;
+}
+
+.code-comment {
+    color: #5c6370;
+    font-style: italic;
+}
+
+/* Additional polish */
+.section h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+/* Smooth scroll */
+.content {
+    scroll-behavior: smooth;
+}
+
+/* Focus states for accessibility */
+.close-btn:focus,
+.copy-btn:focus {
+    outline: 2px solid rgba(96, 165, 250, 0.5);
+    outline-offset: 0.2vw;
+}
+
+/* Section header icon styling */
+.section h2::before {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+/* ============================================ */
+/* EDITOR CONTROL PANELS                        */
+/* ============================================ */
+
+.editor-controls {
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    background: transparent;
+    padding: 1.2vh 1.2vw;
+    color: #fff;
+    z-index: 9999;
+    font-family: 'Inter', sans-serif;
+    min-width: 14vw;
+    max-width: 20vw;
+    animation: slideInRight 0.25s ease-out;
+    pointer-events: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(1vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.editor-controls .editor-title {
+    font-size: 0.95vw;
+    font-weight: 700;
+    margin-bottom: 0.8vh;
+    color: #c4b5fd;
+    padding-bottom: 0.6vh;
+    border-bottom: none;
+}
+
+.editor-controls .toggle-hint {
+    font-size: 0.75vw;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0.6vh;
+}
+
+.editor-controls .control-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4vh;
+}
+
+.editor-controls .control-row {
+    display: flex;
+    align-items: center;
+    font-size: 0.8vw;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.editor-controls .control-key {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.25vh 0.5vw;
+    border-radius: 0.2vw;
+    font-weight: 600;
+    font-size: 0.7vw;
+    min-width: 2.5vw;
+    text-align: center;
+    margin-right: 0.6vw;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.editor-controls .control-action {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75vw;
+}
+
+.editor-controls .control-separator {
+    height: 0.5vh;
+    background: transparent;
+    margin: 0.3vh 0;
+}
+
+.editor-controls .control-highlight {
+    background: rgba(34, 197, 94, 0.6);
+    border-color: rgba(34, 197, 94, 0.8);
+    color: #fff;
+}
+
+.editor-controls .status-info {
+    margin-top: 0.6vh;
+    padding-top: 0.6vh;
+    border-top: none;
+    font-size: 0.8vw;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.editor-controls .status-value {
+    color: #4ade80;
+    font-weight: 700;
+}
