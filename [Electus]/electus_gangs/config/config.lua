@@ -66,10 +66,10 @@ Config.ConnectedZones = {
 Config.Zones = {
 	-- If set to false other's safehouses will not be shown on the map
 	-- Note: setting this to false will automatically disable safehouse raids
-	showSafehousesOnMap = true,
+	showSafehousesOnMap = false,
 	canTransferZones = true,
 
-	hideZonesFromGangsWithoutSafehouse = false, -- recommended to true if you have connected zones enabled (otherwise it will just show empty map)
+	hideZonesFromGangsWithoutSafehouse = true, -- recommended to true if you have connected zones enabled (otherwise it will just show empty map)
 
 	respect = { -- respect is gained every day as long as the gang controlls the zone
 		min = 0,
