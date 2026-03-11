@@ -15,7 +15,7 @@ shared_scripts({
 	"shared/**/*",
 	"escrowed/shared/*",
 	-- "@ox_lib/init.lua",
-	-- "@qbx_core/modules/lib.lua", -- uncomment this if you are using Qbox
+	 "@qbx_core/modules/lib.lua", -- uncomment this if you are using Qbox
 })
 
 files({
@@ -30,7 +30,7 @@ ui_page("ui/build/index.html")
 -- ui_page("http://localhost:5173")
 
 client_scripts({
-	-- "@qbx_core/modules/playerdata.lua", -- uncomment this if you are using Qbox
+	 "@qbx_core/modules/playerdata.lua", -- uncomment this if you are using Qbox
 	"client/**/*",
 	-- "escrowed/client/main.lua",
 	"escrowed/client/**",

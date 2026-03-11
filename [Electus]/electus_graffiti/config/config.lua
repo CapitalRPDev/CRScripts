@@ -1,8 +1,8 @@
 Config = {}
-Config.Framework = "esx" -- "esx", "qbx" or "qb"
-Config.Inventory = "qs" -- "esx", "qb", "core", "qs", "tgiann", "ox_inventory", "qb-inventory", "codem"
+Config.Framework = "qbx" -- "esx", "qbx" or "qb"
+Config.Inventory = "ox_inventory" -- "esx", "qb", "core", "qs", "tgiann", "ox_inventory", "qb-inventory", "codem"
 Config.Locale = "en"
-Config.UploadService = "lb-upload" -- "lb-upload" or "fivemanage"
+Config.UploadService = "fivemanage" -- "lb-upload" or "fivemanage"
 
 Config.MaxGraffities = 10 -- max amount of graffitis a player can have
 Config.MaxVisibleGraffities = 10 -- max amount of graffitis that can be visible at once
