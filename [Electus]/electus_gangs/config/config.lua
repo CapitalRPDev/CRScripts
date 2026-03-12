@@ -9,7 +9,7 @@ Config.MenuSystem = "auto" -- "auto" | "ox_lib_menu" | "ox_lib_context" | "esx_m
 Config.HelpTextStyle = "auto" -- "auto" | "ox_lib" | "okokTextUI" | "jg-textui" | "cd_drawtextui" | "gta"
 
 Config.Locale = "en"
-Config.Debug = false
+Config.Debug = true
 
 -- if you change KeyActions the Key must also be avaliable in Keys table.
 Config.KeyActions = {
