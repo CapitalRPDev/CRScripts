@@ -12,9 +12,11 @@ function CreateInsideGarageExit(shellDoorCoords)
         vector3(5.0, 5.0, 5.0),
         {
             id = 'garage_exit',
+            hideOnSelect = true,
             prompts = {
                 {
                     label = Locale('exit_garage'),
+                    sublabel = 'Leave this garage',
                     icon = 'fa-solid fa-door-open',
                     action = function()
                         TriggerEvent('cd_garage:Exit')
@@ -39,9 +41,11 @@ function CreatePrivateGarageTargetZone(d)
         vector3(d.Dist, d.Dist, d.Dist),
         {
             id = 'garage_' .. d.Garage_ID,
+            hideOnSelect = true,
             prompts = {
                 {
                     label = Locale('open_garage'),
+                    sublabel = 'Browse available vehicles',
                     icon = 'fa-solid fa-car',
                     action = function()
                         TriggerEvent('cd_garage:EnterGarage_Outside', index)
@@ -49,6 +53,7 @@ function CreatePrivateGarageTargetZone(d)
                 },
                 {
                     label = Locale('enter_garage'),
+                    sublabel = 'Go inside the garage',
                     icon = 'fa-solid fa-warehouse',
                     action = function()
                         TriggerEvent('cd_garage:EnterGarage_Inside', index)
@@ -59,6 +64,7 @@ function CreatePrivateGarageTargetZone(d)
                 },
                 {
                     label = Locale('store_vehicle'),
+                    sublabel = 'Store your current vehicle',
                     icon = 'fa-solid fa-trash',
                     action = function()
                         TriggerEvent('cd_garage:StoreVehicle_Main', false, false, false)
@@ -66,6 +72,7 @@ function CreatePrivateGarageTargetZone(d)
                 },
                 {
                     label = Locale('garage_raid'),
+                    sublabel = 'Raid this garage',
                     icon = 'fa-solid fa-handcuffs',
                     action = function()
                         TriggerEvent('cd_garage:GarageRaid', d.Garage_ID)
@@ -85,9 +92,11 @@ for index, d in pairs(Config.Locations) do
         vector3(d.Dist, d.Dist, d.Dist),
         {
             id = 'garage_' .. d.Garage_ID,
+            hideOnSelect = true,
             prompts = {
                 {
                     label = Locale('open_garage'),
+                    sublabel = 'Browse available vehicles',
                     icon = 'fa-solid fa-car',
                     action = function()
                         TriggerEvent('cd_garage:EnterGarage_Outside', index)
@@ -95,6 +104,7 @@ for index, d in pairs(Config.Locations) do
                 },
                 {
                     label = Locale('enter_garage'),
+                    sublabel = 'Go inside the garage',
                     icon = 'fa-solid fa-warehouse',
                     action = function()
                         TriggerEvent('cd_garage:EnterGarage_Inside', index)
@@ -105,6 +115,7 @@ for index, d in pairs(Config.Locations) do
                 },
                 {
                     label = Locale('store_vehicle'),
+                    sublabel = 'Store your current vehicle',
                     icon = 'fa-solid fa-trash',
                     action = function()
                         TriggerEvent('cd_garage:StoreVehicle_Main', false, false, false)
@@ -112,6 +123,7 @@ for index, d in pairs(Config.Locations) do
                 },
                 {
                     label = Locale('garage_raid'),
+                    sublabel = 'Raid this garage',
                     icon = 'fa-solid fa-handcuffs',
                     action = function()
                         TriggerEvent('cd_garage:GarageRaid', d.Garage_ID)
@@ -132,9 +144,11 @@ if Config.Impound.ENABLE then
             vector3(10.0, 10.0, 10.0),
             {
                 id = 'impound_' .. d.ImpoundID,
+                hideOnSelect = true,
                 prompts = {
                     {
                         label = Locale('impound'),
+                        sublabel = 'Open the impound menu',
                         icon = 'fa-solid fa-warehouse',
                         action = function()
                             OpenImpound(d.ImpoundID)
@@ -157,9 +171,11 @@ if Config.JobVehicles.ENABLE then
                 vector3(dd.distance, dd.distance, dd.distance),
                 {
                     id = 'job_garage:' .. c .. ' - ' .. cc,
+                    hideOnSelect = true,
                     prompts = {
                         {
                             label = Locale('open_garage'),
+                            sublabel = 'Access job vehicles',
                             icon = 'fa-solid fa-car',
                             action = function()
                                 local job = GetJobName()
@@ -182,6 +198,7 @@ if Config.JobVehicles.ENABLE then
                         },
                         {
                             label = Locale('store_vehicle'),
+                            sublabel = 'Store your job vehicle',
                             icon = 'fa-solid fa-trash',
                             action = function()
                                 local ped = PlayerPedId()
@@ -228,9 +245,11 @@ if Config.GangGarages.ENABLE then
             vector3(gang.distance, gang.distance, gang.distance),
             {
                 id = 'garage_' .. gang.garage_id,
+                hideOnSelect = true,
                 prompts = {
                     {
                         label = Locale('open_garage'),
+                        sublabel = 'Access gang vehicles',
                         icon = 'fa-solid fa-car',
                         action = function()
                             local gangName = GetGangName()
@@ -243,6 +262,7 @@ if Config.GangGarages.ENABLE then
                     },
                     {
                         label = Locale('store_vehicle'),
+                        sublabel = 'Store a gang vehicle',
                         icon = 'fa-solid fa-trash',
                         action = function()
                             local gangName = GetGangName()
