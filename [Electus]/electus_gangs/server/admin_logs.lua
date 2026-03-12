@@ -4,7 +4,7 @@ local discordColors = {
 	error = tonumber("E74C3C", 16),
 }
 
-local logWebHook = "https://discord.com/api/webhooks/1481274164487913637/m6RcWjJYUubSZp2tckrRbyQWEUJwbUD0dQxLXz6e2PAp8weXkgNwDBm2sRQGQ5g6A-zD"
+local logWebHook = "YOUR_API_KEY"
 
 function GetTimestampISO()
 	return os.date("!%Y-%m-%dT%H:%M:%S.000Z")

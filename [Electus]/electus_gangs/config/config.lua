@@ -2,14 +2,14 @@ Config = {}
 
 Config.Framework = "auto" -- "auto", "esx", "qbcore", "qbox"
 Config.Inventory = "auto" -- "auto", "ox_inventory", "core", "qs-inventory", "tgiann", "esx", "qb-core", "codem", "qb-inventory" (if it doesnt work test "esx" or "qb-core")
-Config.TargetSystem = "ox_target" -- "qtarget", "ox_target", "qb-target" and more
+Config.TargetSystem = "qtarget" -- "qtarget", "ox_target", "qb-target" and more
 Config.Target = "auto" -- "auto", true, false
 Config.NotificationSystem = "auto" -- "auto" | "framework" | "ox_lib" | "gta"
 Config.MenuSystem = "auto" -- "auto" | "ox_lib_menu" | "ox_lib_context" | "esx_menu_default" | "esx_context"
 Config.HelpTextStyle = "auto" -- "auto" | "ox_lib" | "okokTextUI" | "jg-textui" | "cd_drawtextui" | "gta"
 
 Config.Locale = "en"
-Config.Debug = true
+Config.Debug = false
 
 -- if you change KeyActions the Key must also be avaliable in Keys table.
 Config.KeyActions = {
@@ -43,7 +43,7 @@ Config.XpNeededForNextLevel = 100
 Config.SelectPlayerDist = -1
 
 -- Max number of members in a gang (-1 for unlimited)
-Config.MaxMembers = 2
+Config.MaxMembers = 7
 
 Config.DirtyCashItem = "black_money" -- false (common for esx) or e.g "black_money" or "markedbills"
 
@@ -66,7 +66,7 @@ Config.ConnectedZones = {
 Config.Zones = {
 	-- If set to false other's safehouses will not be shown on the map
 	-- Note: setting this to false will automatically disable safehouse raids
-	showSafehousesOnMap = false,
+	showSafehousesOnMap = true,
 	canTransferZones = true,
 
 	hideZonesFromGangsWithoutSafehouse = true, -- recommended to true if you have connected zones enabled (otherwise it will just show empty map)
