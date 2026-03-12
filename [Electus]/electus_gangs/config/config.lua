@@ -1,5 +1,5 @@
 Config = {}
-
+-- Test
 Config.Framework = "auto" -- "auto", "esx", "qbcore", "qbox"
 Config.Inventory = "auto" -- "auto", "ox_inventory", "core", "qs-inventory", "tgiann", "esx", "qb-core", "codem", "qb-inventory" (if it doesnt work test "esx" or "qb-core")
 Config.TargetSystem = "qtarget" -- "qtarget", "ox_target", "qb-target" and more
