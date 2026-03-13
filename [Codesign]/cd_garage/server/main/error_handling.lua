@@ -62,14 +62,17 @@ CreateThread(function()
     if Config.IdentifierType ~= 'steamid' and Config.IdentifierType ~= 'license' then
         ERROR('configuration_error_found', 'Config.IdentifierType Error : ['..Config.IdentifierType..']')
     end
-    if Config.GarageInteractMethod == 'auto_detect' then
-        ERROR('configuration_error_found', 'Config.GarageInteractMethod Error : ['..Config.GarageInteractMethod..']')
-    end
     if #Config.VehiclePlateFormats.new_plate_format < 0 or #Config.VehiclePlateFormats.new_plate_format > 8 then
         ERROR('configuration_error_found', 'Config.VehiclePlateFormats.new_plate_format length must be between 0 and 8 characters.')
     end
     if Config.VehiclePlateFormats.format ~= 'trimmed' and Config.VehiclePlateFormats.format ~= 'with_spaces' and Config.VehiclePlateFormats.format ~= 'mixed' then
         ERROR('configuration_error_found', 'Config.VehiclePlateFormats.format Error : ['..Config.VehiclePlateFormats.format..']')
+    end
+    if Config.GarageInteractMethod == 'textui' and Config.DrawTextUi == 'none' then
+        ERROR('configuration_error_found', 'Invalid Config.GarageInteractMethod. Cfg.DrawTextUi not configured in bridge.')
+    end
+    if Config.GarageInteractMethod == 'target' and Config.Target == 'none' then
+        ERROR('configuration_error_found', 'Invalid Config.GarageInteractMethod. Cfg.Target not configured in bridge.')
     end
 
     PreStartItemChecks()

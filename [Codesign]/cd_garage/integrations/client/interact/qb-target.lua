@@ -1,5 +1,4 @@
-if Config.GarageInteractMethod ~= 'qb-target' then return end
-
+if true then return end
 local gangZones = {}
 
 function DeleteGarageTargetZone(id)

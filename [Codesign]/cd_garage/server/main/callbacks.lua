@@ -72,3 +72,7 @@ end)
 exports.cd_bridge:RegisterServerCallback('cd_garage:has_vehicle_already_spawned', function(src, ...)
     return HasVehicleAlreadySpawned(...)
 end)
+
+exports.cd_bridge:RegisterServerCallback('cd_garage:StoreVehicle', function(src, ...)
+    return StoreVehicle(src, ...)
+end)

@@ -14,8 +14,7 @@ end
 Config.AutoInsertSQL = true --Recommended to enable before updating the script.
 Config.Debug = false --To enable debug prints.
 Config.VehicleDataDebugPrints = false --Enable to see debug prints related to vehicle data fetching.
-Config.GarageInteractMethod = 'auto_detect' --[ 'auto_detect', 'cd_drawtextui', 'okokTextUI', 'ox_target', 'ps-ui', 'qb-target', 'qbcore', 'vms_notifyv2', 'ZSX_UIV2' ]
-Config.IdentifierType = 'license' --[ 'steamid' / 'license' ] Choose the identifier type that your server uses.
+Config.GarageInteractMethod = 'target' --[ 'textui', 'target' ]Config.IdentifierType = 'license' --[ 'steamid' / 'license' ] Choose the identifier type that your server uses.
 Config.PlayerListMethod = 'both' --[ 'both' / 'charname' / 'source' ] --Choose how you want the player list to be displayed in the garage UI. 'both' will show both character name and source, 'charname' will only show character name, and 'source' will only show source.
 
 Config.VehiclePlateFormats = {

@@ -6,6 +6,13 @@ function ToggleShellTime(toggle)
             TriggerEvent('cd_easytime:PauseSync', false)
         end
 
+    elseif Config.TimeWeather == 'qb-weathersync' then
+        if toggle == 'enter' then
+            TriggerEvent('qb-weathersync:client:DisableSync')
+        elseif toggle == 'exit' then
+            TriggerEvent('qb-weathersync:client:EnableSync')
+        end
+
     elseif Config.TimeWeather == 'vsync' then
         if toggle == 'enter' then
             TriggerEvent('vSync:toggle',false)
@@ -13,13 +20,6 @@ function ToggleShellTime(toggle)
         elseif toggle == 'exit' then
             TriggerEvent('vSync:toggle',true)
             TriggerServerEvent('vSync:requestSync')
-        end
-
-    elseif Config.TimeWeather == 'qbcore' then
-        if toggle == 'enter' then
-            TriggerEvent('qb-weathersync:client:DisableSync')
-        elseif toggle == 'exit' then
-            TriggerEvent('qb-weathersync:client:EnableSync')
         end
     end
 end

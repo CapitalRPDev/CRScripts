@@ -4,11 +4,11 @@
 
 
 --These are disabled by default, until you enter your discord webhooks.
-local ExploitLogWebhook = 'https://discord.com/api/webhooks/1481647533301305404/pXESRNSluJETpDd3iGSAnGDpk_jRw5bbad1ogz3MrjA2xLvqzB8ChunUW79DtY1Bp19J' --If a player is found using cheat engine to change the hash of a vehicle, this will send a message on discord and kick them from the game.
-local ImpoundLogWebhook = 'https://discord.com/api/webhooks/1481647533301305404/pXESRNSluJETpDd3iGSAnGDpk_jRw5bbad1ogz3MrjA2xLvqzB8ChunUW79DtY1Bp19J' --When a player impounds/unimpounds a vehicle.
-local TransferVehicleLogWebhook = 'https://discord.com/api/webhooks/1481647533301305404/pXESRNSluJETpDd3iGSAnGDpk_jRw5bbad1ogz3MrjA2xLvqzB8ChunUW79DtY1Bp19J' --When a player transfers a vehicle to another player.
-local VehicleManagementLogWebhook = 'https://discord.com/api/webhooks/1481647533301305404/pXESRNSluJETpDd3iGSAnGDpk_jRw5bbad1ogz3MrjA2xLvqzB8ChunUW79DtY1Bp19J' --When a staff member uses the vehicle managment commands.
-local GarageSpaceLogWebhook = 'https://discord.com/api/webhooks/1481647533301305404/pXESRNSluJETpDd3iGSAnGDpk_jRw5bbad1ogz3MrjA2xLvqzB8ChunUW79DtY1Bp19J' --When a player sells a garage slot.
+local ExploitLogWebhook = 'CHANGE_ME' --If a player is found using cheat engine to change the hash of a vehicle, this will send a message on discord and kick them from the game.
+local ImpoundLogWebhook = 'CHANGE_ME' --When a player impounds/unimpounds a vehicle.
+local TransferVehicleLogWebhook = 'CHANGE_ME' --When a player transfers a vehicle to another player.
+local VehicleManagementLogWebhook = 'CHANGE_ME' --When a staff member uses the vehicle managment commands.
+local GarageSpaceLogWebhook = 'CHANGE_ME' --When a player sells a garage slot.
 
 
 ------------------------------------------------------------------------------------------------------

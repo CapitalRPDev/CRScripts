@@ -10,9 +10,9 @@ AddEventHandler('cd_garage:VehicleManagement', function(action, data)
             VehicleDelete(_source, action, data)
 
         elseif action == 'plate' then
-            VehiclePlate(source, action, data)
+            VehiclePlate(_source, action, data)
         elseif action == 'keys' then
-            VehicleKeys(source, action, data)
+            VehicleKeys(_source, action, data)
         end
     else
         Notif(_source, 3, 'vehmanagment_noperms')
@@ -82,6 +82,7 @@ function VehiclePlate(source, action, data)
                 ['@'..FW.vehicle_props..''] = json.encode(props),
             })
             TriggerClientEvent('cd_garage:VehicleManagement_plate', source, data.new_plate)
+            TriggerEvent('cd_garage:VehiclePlateChanged', data.old_plate, data.new_plate)
             Notif(source, 1, 'vehmanagment_platechanged', data.old_plate, data.new_plate)
             VehicleManagmentLogs(source, action, data.old_plate, data.new_plate)
             if Config.PersistentVehicles.ENABLE then

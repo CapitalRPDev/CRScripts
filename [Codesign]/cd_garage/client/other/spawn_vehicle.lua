@@ -124,7 +124,7 @@ function VehicleSpawned(vehicle, plate, props, job_vehicle) --This will be trigg
 end
 
 function VehicleStored(vehicle, plate, props) --This will be triggered just before a vehicle is stored.
-    local ped = PlayerPedId()
+    RemoveVehicleKeys(plate, vehicle) -- in cd_bridge.
     DespawnNetworkedVehicle(vehicle) -- in cd_bridge.
     TriggerServerEvent('cd_mechanic:OwnedVehicleStored', plate) -- in cd_mechanic server/statebags.lua.
     Notif(1, 'vehicle_stored')

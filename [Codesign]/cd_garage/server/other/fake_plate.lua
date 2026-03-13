@@ -57,7 +57,7 @@ AddEventHandler('cd_garage:FakePlate', function(action, current_plate, vehicle, 
                 if Config.VehicleKeys.ENABLE then
                     Keys_FakePlate(current_plate, new_plate)
                 end
-                FakePlateAdded(current_plate, new_plate)
+                TriggerEvent('cd_garage:VehiclePlateChanged', current_plate, new_plate)
                 Notif(_source, 1, 'fakeplate_add_success')
             else
                 Notif(_source, 3, 'dont_own_vehicle')
@@ -80,7 +80,7 @@ AddEventHandler('cd_garage:FakePlate', function(action, current_plate, vehicle, 
                 if Config.VehicleKeys.ENABLE then
                     Keys_FakePlate(current_plate, originalPlate)
                 end
-                FakePlateRemoved(current_plate, originalPlate)
+                TriggerEvent('cd_garage:VehiclePlateChanged', current_plate, new_plate)
                 FakePlateTable[current_plate] = nil
                 Notif(_source, 1, 'fakeplate_remove_success')
             else

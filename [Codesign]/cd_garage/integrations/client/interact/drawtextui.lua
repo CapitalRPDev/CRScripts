@@ -1,16 +1,4 @@
-local allowed = {
-    ['cd_drawtextui'] = true,
-    ['jg-textui'] = true,
-    ['okokTextUI'] = true,
-    ['ps-ui'] = true,
-    ['qbcore'] = true,
-    ['vms_notifyv2'] = true,
-    ['ZSX_UIV2'] = true,
-}
-
-if not allowed[Config.GarageInteractMethod] then
-    return
-end
+if Config.GarageInteractMethod ~= 'textui' then return end
 
 local function UpdateTextUIState(state, inZone, text)
     local pauseActive = IsPauseMenuActive()
@@ -144,7 +132,7 @@ if Config.JobVehicles.ENABLE then
                                             TriggerEvent('cd_garage:JobVehicleSpawn', 'owned', job, self.garage_type, true, self.spawn_coords)
                                         elseif self.method == 'personalowned' then
                                             TriggerEvent('cd_garage:JobVehicleSpawn', 'owned', job, self.garage_type, false, self.spawn_coords)
-                                        elseif self.method == 'regular' then
+                                        elseif self.method == 'regular' and Config.JobVehicles.RegularMethod[job] then
                                             TriggerEvent('cd_garage:JobVehicleSpawn', 'not_owned', job, self.garage_type, Config.JobVehicles.RegularMethod[job], self.spawn_coords)
                                         end
                                     else
