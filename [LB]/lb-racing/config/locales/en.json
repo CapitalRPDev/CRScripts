@@ -1,0 +1,465 @@
+{
+    "LOCALE": "en-US",
+    "THOUSAND_SEPARATOR": ",",
+    "DECIMAL_SEPARATOR": ".",
+    "CURRENCY": "${amount}",
+    "APP": {
+        "HOME": "Home",
+        "LEADERBOARD": {
+            "TITLE": "Leaderboard",
+            "RATING": "{rating} rating",
+            "WINRATE": "{winrate}% W/L",
+            "RACES": "{racesWon}/{racesPlayed} races",
+            "FILTER": {
+                "RATING": "Rating",
+                "NAME": "Name",
+                "WINS": "Wins",
+                "PLAYED": "Played",
+                "MONEY_WON": "Money Won"
+            }
+        },
+        "USER": {
+            "TITLE": "Profile",
+            "DISPLAY_NAME": "Display Name",
+            "DARK_THEME": "Dark Theme",
+
+            "CHANGE_DISPLAY_NAME": {
+                "TITLE": "Change Display Name",
+                "DESCRIPTION": "Enter a new display name",
+                "BUTTONS": {
+                    "CANCEL": "Cancel",
+                    "PROCEED": "Proceed"
+                }
+            },
+            "SET_AVATAR": {
+                "TITLE": "Set Avatar",
+                "DESCRIPTION": "Set a new avatar for your profile",
+                "URL": "URL Link to your avatar",
+                "ERROR": "Error",
+                "ERROR_DESCRIPTION": "The avatar URL is invalid",
+                "BUTTONS": {
+                    "CANCEL": "Cancel",
+                    "PROCEED": "Proceed"
+                }
+            },
+            "PUBLIC_PROFILE": "Public Profile",
+            "HIDDEN_PROFILE": "Hidden Profile",
+            "RECENT_RACES": "Recent Races"
+        },
+        "RACES": {
+            "TITLE": "Races",
+            "JOIN": "Join",
+            "LEAVE": "Leave",
+            "CANCEL": "Cancel",
+            "VIEW": "View",
+            "CREATE": "Create",
+            "CREATE_RACE": "Create Race",
+            "COPY": "Copy",
+            "ALL": "All",
+            "START_DATE": "Start Date",
+            "FINISH_DATE": "Finish Date",
+            "SELECT_START_DATE": "Select Start Date",
+            "SELECT_TIME": "Select Time",
+            "NOW": "Now",
+            "HOST": "Host",
+            "NAME": "Name",
+            "RACE_NAME": "Race Name",
+            "VEHICLE_TIERS": "Vehicle Tiers",
+            "VEHICLE": "Vehicle",
+            "VEHICLE_CLASS": "Vehicle Class",
+            "ASSIGN_VEHICLE": "Assign Vehicle",
+            "REPEAT_RACE": "Repeat Race",
+            "PAYMENT_METHOD": "Payment Method",
+            "PRIZE_POOL": "Prize Pool",
+            "PRIZE_POOL_DESCRIPTION": "This amount will be funded by the host at the start of the race. Entry fees will be added towards the prize pool.",
+            "PRIZE_POOL_AMOUNT": "${amount} prize pool",
+            "STARTING_PRIZE_POOL": "Starting Prize Pool",
+            "ENTRY_FEE": "Entry Fee",
+            "HOST_COMMISSION": "Host Commission (%)",
+            "HOST_COMMISSION_DESCRIPTION": "The host will receive this percentage of the total prize pool.",
+            "SELECT_TRACK": "Select Track",
+            "SELECT_TRACKS": "Select Tracks",
+            "TRACK": "Track",
+            "TRACKS": "Tracks",
+            "RANDOM_TRACK": "Random Track",
+            "LAPS": "Laps",
+            "PARTICIPANTS": "Participants",
+            "MINIMUM_PARTICIPANTS": "Minimum Participants",
+            "MAXIMUM_PARTICIPANTS": "Maximum Participants",
+            "OPTIONS": "Options",
+            "PERSONAL_VEHICLE": "Personal Vehicle",
+            "CAR_COLLISIONS": "Car Collisions",
+            "FORCE_FIRST_PERSON": "Force First Person",
+            "DISABLE_NPC_TRAFFIC": "Disable NPC Traffic",
+            "INVITE_ONLY": "Invite Only",
+            "REQUIRE_SIGN_UP": "Require Sign Up",
+            "RANKED": "Ranked",
+            "RANKED_RACE": "Ranked Race",
+            "MIN_RATING": "Min Rating",
+            "MAX_RATING": "Max Rating",
+            "INVITES": "Invites",
+            "INVITE": "Invite",
+            "INVITE_SENT": "Invite Sent",
+            "INVITE_SENT_DESCRIPTION": "You have successfully invited {username} to the race.",
+            "DISMISS": "Dismiss",
+            "ACCEPT": "Accept",
+            "ENTRY_FEE_AMOUNT": "${amount} entry fee",
+            "LAPS_AMOUNT": "{amount} laps",
+            "PAYMENT_METHODS": {
+                "MONEY": "Money"
+            },
+            "PRIZE_DISTRIBUTION": {
+                "TITLE": "Prize Distribution",
+                "DEFINED": "Defined",
+                "AUTO": "Auto",
+                "ALGORITHM": "Algorithm",
+                "WINNERS": "Distribute to winners",
+                "WINNERS_AMOUNT": "{amount} winners",
+                "ALGORITHMS": {
+                    "EXPONENTIAL": "Exponential",
+                    "LINEAR": "Linear"
+                }
+            },
+            "REPEAT": {
+                "NEVER": "Never",
+                "EVERY_X_MINUTES": "Every {minutes} minutes",
+                "EVERY_HOUR": "Every hour",
+                "EVERY_X_HOURS": "Every {hours} hours",
+                "EVERY_DAY": "Every day",
+                "EVERY_X_DAYS": "Every {days} days",
+                "EVERY_WEEK": "Every week",
+                "EVERY_X_WEEKS": "Every {weeks} weeks",
+                "EVERY_MONTH": "Every month"
+            },
+            "CANCEL_RACE": {
+                "TITLE": "Cancel Race",
+                "DESCRIPTION": "Are you sure you want to cancel this race?",
+                "BUTTONS": {
+                    "CANCEL": "Cancel",
+                    "CONFIRM": "Confirm"
+                }
+            },
+            "ERRORS": {
+                "ERROR": "Error",
+                "UNKNOWN_ERROR": "An unknown error occurred",
+                "NO_TRACK_SELECTED": "No track selected",
+                "INVALID_TRACK_SELECTED": "Invalid track selected",
+                "NO_RACE_NAME_ENTERED": "No race name entered",
+                "NO_PRIZE_POOL_SET": "No prize pool set",
+                "INVALID_HOST_COMMISSION": "Invalid host commission",
+                "INVALID_MINIMUM_PARTICIPANTS": "Invalid minimum participants",
+                "INVALID_MAXIMUM_PARTICIPANTS": "Invalid maximum participants",
+                "MINIMUM_PARTICIPANTS_HIGHER_THAN_MAXIMUM": "Minimum participants is higher than maximum participants",
+                "NO_START_DATE": "No start date set",
+                "NO_PRIZE_DISTRIBUTION": "No prize distribution set",
+                "PRIZE_DISTRIBUTION": "Prize distribution does not add up to 100",
+                "NO_RATING_SET": "No rating set",
+                "MIN_RATING_HIGHER_THAN_MAX_RATING": "Min rating is higher than max rating",
+                "OK": "OK",
+                "COOLDOWN": "You must wait {timeLeft}s before creating another race"
+            },
+            "FILTER": {
+                "ALL_RACES": "All Races",
+                "OPEN_ONLY": "Open Only",
+                "OPEN": "Open",
+                "RANKED_ONLY": "Ranked Only",
+                "RANKED": "Ranked",
+                "VEHICLE_TIER": "Vehicle Tier",
+                "START_DATE": "Start Date",
+                "CREATED_DATE": "Created Date",
+                "PARTICIPANTS": "Participants",
+                "DATE_ASCENDING": "Date Ascending",
+                "DATE_DESCENDING": "Date Descending"
+            }
+        },
+        "TRACKS": {
+            "TITLE": "Tracks",
+            "TRACK": "Track",
+            "EDIT": "Edit",
+            "COPY": "Copy",
+            "DELETE": "Delete",
+            "RANDOM": "Random",
+            "DELETE_DESCRIPTION": "Are you sure you want to delete this track?",
+            "CREATE_TRACK": "Create Track",
+            "USES": "Uses",
+            "VEHICLE_TYPE": "Vehicle Type",
+            "TRACK_TYPE": "Track Type",
+            "PREVIEW": "Preview",
+            "USED_X_TIMES": "Used {times} times",
+            "TRACK_NAME": "Track Name",
+            "NAME": "Name",
+            "OPEN_CREATOR": "Open Creator",
+            "UNKNOWN_TRACK": "Unknown Track",
+            "WAYPOINT": "Waypoint",
+            "SET_WAYPOINT": "Set Waypoint",
+            "WAYPOINT_DESCRIPTION": "The waypoint has been set successfully.",
+            "LEADERBOARD": "Leaderboard",
+            "NO_LEADERBOARD_ENTRIES": "No leaderboard entries yet",
+
+            "ERRORS": {
+                "ERROR": "Error",
+                "NO_TRACK_NAME_ENTERED": "No track name entered",
+                "NO_VEHICLE_TYPE_SELECTED": "No vehicle type selected",
+                "NO_TRACK_TYPE_SELECTED": "No track type selected"
+            },
+
+            "FILTER": {
+                "ALL_TRACKS": "All Tracks",
+                "LIKED": "Liked",
+                "LIKES": "Likes",
+                "CIRCUIT": "Circuit",
+                "SPRINT": "Sprint",
+                "CREATED_DATE": "Created Date",
+                "USES": "Uses",
+                "LENGTH": "Length",
+                "ORDER": "Order",
+                "SORT": "Sort",
+                "DATE_ASCENDING": "Date Ascending",
+                "DATE_DESCENDING": "Date Descending"
+            }
+        },
+        "MISC": {
+            "OK": "OK",
+            "BACK": "Back",
+            "CANCEL": "Cancel",
+            "SAVE": "Save",
+            "DONE": "Done",
+            "PROCEED": "Proceed",
+            "OPTIONAL": "Optional",
+            "SEARCH": "Search",
+            "STATISTICS": {
+                "TITLE": "Statistics",
+                "RATING": "Rating",
+                "TOTAL_WINS": "Total Wins",
+                "WIN_RATE": "Win Rate",
+                "TOTAL_WON": "Total Won",
+                "LAST_RACE": "Last Race"
+            },
+            "DATE": {
+                "DAYS_AGO": "{days} days ago",
+                "HOURS_AGO": "{hours} hours ago",
+                "MINUTES_AGO": "{minutes} minutes ago",
+                "FINISHED_DAYS_AGO": "Finished {days} days ago",
+                "FINISHED_HOURS_AGO": "Finished {hours} hours ago",
+                "FINISHED_MINUTES_AGO": "Finished {minutes} minutes ago",
+                "IN_DAYS": "in {days} days",
+                "IN_HOURS": "in {hours} hours",
+                "IN_MINUTES": "in {minutes} minutes",
+                "STARTED": "Started",
+                "JUST_STARTED": "Just started",
+                "STARTING_SOON": "Starting soon",
+                "STARTS_IN": "Starts in"
+            },
+            "FINISHED": "Finished",
+            "CANCELED": "Canceled",
+            "FOOTER": {
+                "HOME": "Home",
+                "LEADERBOARD": "Leaderboard",
+                "TRACKS": "Tracks",
+                "RACES": "Races",
+                "PROFILE": "Profile"
+            }
+        }
+    },
+    "HUD": {
+        "YOU": "You",
+        "DNF": "DNF",
+        "FINISHED": "Finished",
+        "STATISTICS": {
+            "CURRENT_LAP": "Current Lap",
+            "POSITION": "Position",
+            "CHECKPOINT": "Checkpoint",
+            "PROGRESS": "Progress",
+            "TOTAL_TIME": "Total Time",
+            "BEST_LAP": "Best Lap"
+        },
+        "COUNTDOWN": {
+            "GO": "GO!!!"
+        },
+        "CREATOR": {
+            "FREECAM": "Freecam",
+            "SET_START_POSITION": "Set Start Position",
+            "CHANGE_START_POSITION": "Change Start Position",
+            "CHECKPOINTS": "Checkpoints ({amount})",
+            "CHECKPOINT_NAME": "Checkpoint {index}",
+            "ADD_CHECKPOINTS": "Add Checkpoints",
+            "CHECKPOINT_GAP": "Checkpoint Gap",
+            "BARRIERS": "Barriers ({amount})",
+            "BARRIER_NAME": "Barrier {index}",
+            "ADD_BARRIERS": "Add Barriers",
+            "CANCEL": "Cancel",
+            "CREATE": "Create",
+            "SAVE": "Save",
+            "COPIED_TRACK_NAME": "{trackName} (Copy)",
+            "SELECT_TYPE_MODEL": "Select {type} Model",
+            "START_POSITION_BLIP": "Start Position",
+            "CHECKPOINT_BLIP": "Checkpoint",
+            "BARRIER_BLIP": "Barrier",
+            "START_POSITION_TOO_CLOSE": "The start position is too close to the first checkpoint!",
+            "SAVING_TRACK": "Saving Track...",
+            "SAVING_TRACK_DESCRIPTION": "This can take some time with large tracks",
+            "CONTROLS": {
+                "TOGGLE_CURSOR": "Toggle cursor",
+                "HIDE_CURSOR": "Hide cursor",
+                "MOVE": "Move",
+                "UP_DOWN": "Up/Down",
+                "FAST_SLOW": "Fast/Slow",
+                "SET_START_POSITION": "Set start position",
+                "ROTATE": "Rotate",
+                "CHANGE_GAP": "Change gap",
+                "PLACE_CHECKPOINT": "Place checkpoint",
+                "PLACE_BARRIER": "Place barrier",
+                "CONFIRM": "Confirm"
+            },
+            "ERRORS": {
+                "NO_START_POSITION": "You must set a start position before saving the track.",
+                "NOT_ENOUGH_CHECKPOINTS": "You must have at least 2 checkpoints to save the track.",
+                "UNKNOWN_ERROR": "An unknown error occurred while saving the track. (Check F8 and server console for more details)"
+            }
+        },
+        "CHECKPOINT_MARKER": {
+            "FINISH": "FINISH",
+            "CHECKPOINT": "CHECKPOINT {checkpoint}"
+        },
+        "JOIN_MARKER": {
+            "LENGTH": "{laps} laps ({distance})",
+            "PRIZE_POOL": "Prize Pool",
+            "ENTRY_FEE": "Entry Fee",
+            "VEHICLE_TYPE": "Vehicle Type",
+            "STARTS_IN": "Starts In",
+            "PARTICIPANTS_READY": "Participants Ready",
+            "PRESS": "PRESS",
+            "TO_READY": "TO READY",
+            "TO_UNREADY": "TO UNREADY"
+        },
+        "DISTANCE": {
+            "FORMAT": "{distance}{unit}",
+            "UNITS": {
+                "MILES": "mi",
+                "YARDS": "yd",
+                "KILOMETERS": "km",
+                "METERS": "m"
+            }
+        },
+        "CONTROLS": {
+            "FLIP_CAR_DESCRIPTION": "Flip your car",
+            "FLIP_CAR": "{control} flip car",
+            "HOLD_FLIP_CAR": "Hold {control} to flip your car",
+
+            "TP_CHECKPOINT_DESCRIPTION": "Teleport to the last checkpoint",
+            "TP_CHECKPOINT": "{control} TP to last checkpoint",
+            "HOLD_TP_CHECKPOINT": "Hold {control} to TP to the last checkpoint"
+        }
+    },
+    "ORDINAL": {
+        "ZERO": "th",
+        "ONE": "st",
+        "TWO": "nd",
+        "FEW": "rd",
+        "MANY": "th",
+        "OTHER": "th",
+        "PLACE": "place"
+    },
+    "NOTIFICATIONS": {
+        "SET_WAYPOINT": "Set waypoint",
+        "TIME": {
+            "SECONDS": "{time} seconds",
+            "MINUTE": "{time} minute",
+            "MINUTES": "{time} minutes",
+            "HOUR": "{time} hour",
+            "HOURS": "{time} hours"
+        },
+        "RACE_STARTING": {
+            "TITLE": "Race starting!",
+            "DESCRIPTION": "The race {raceName} is starting! Head to the waypoint and get ready."
+        },
+        "RACE_STARTING_SOON": {
+            "TITLE": "Race starting soon",
+            "DESCRIPTION": "The race {raceName} is starting in {time}."
+        },
+        "RACE_CANCELED": {
+            "TITLE": "Race canceled",
+            "DESCRIPTION": "The race {raceName} has been canceled. {entryRefund}",
+            "REFUND": "Your entry fee of ${entryFee} has been refunded.",
+            "TRANSACTION": "Race Entry Refund - {raceName}"
+        },
+        "RACE_FINISHED": {
+            "TITLE": "Race finished",
+            "DESCRIPTION": "The race {raceName} has finished! View the results in the app."
+        },
+        "VEHICLE_TYPE_NOT_ALLOWED": {
+            "TITLE": "Vehicle not allowed",
+            "DESCRIPTION": "Your vehicle type is not allowed in this race."
+        },
+        "VEHICLE_TIER_NOT_ALLOWED": {
+            "TITLE": "Vehicle not allowed",
+            "DESCRIPTION": "Your vehicle's tier is not allowed in this race."
+        },
+        "VEHICLE_CLASS_NOT_ALLOWED": {
+            "TITLE": "Vehicle not allowed",
+            "DESCRIPTION": "Your vehicle's class is not allowed in this race."
+        },
+        "VEHICLE_MODEL_NOT_ALLOWED": {
+            "TITLE": "Vehicle not allowed",
+            "DESCRIPTION": "Your vehicle model is not allowed in this race."
+        },
+        "NEED_TO_OWN_VEHICLE": {
+            "TITLE": "Vehicle not allowed",
+            "DESCRIPTION": "You need to own the vehicle that you race with."
+        },
+        "COMMISSION_TRANSACTION": "Race Commission - {raceName}",
+        "WINNINGS_TRANSACTION": "Race Winnings - {raceName}",
+        "REFUND_TRANSACTION": "Race Refund - {raceName}",
+        "PRIZE_POOL_TRANSACTION": "Prize Pool Funding - {raceName}",
+        "ENTRY_FEE_TRANSACTION": "Race Entry Fee - {raceName}",
+        "ENTRY_REFUND_TRANSACTION": "Race Entry Refund - {raceName}",
+        "FAILED_CREATE_RACE": {
+            "TITLE": "Failed to create race",
+            "INVALID_TRACK": "Invalid track selected.",
+            "TRACK_USED": "The selected track is already in use for another race at the same time.",
+            "INVALID_MIN_PARTICIPANTS": "Minimum participants must be at least 2.",
+            "START_TOO_SOON": "The race has to start at least 10 minutes from now.",
+            "INVALID_PRIZE_DISTRIBUTION": "The prize distribution must add up to 100%.",
+            "NO_MONEY": "You don't have enough money to fund the prize pool."
+        },
+        "FAILED_JOIN_RACE": {
+            "TITLE": "Failed to join race",
+            "RATING_TOO_LOW": "Your rating is too low to join this race.",
+            "RATING_TOO_HIGH": "Your rating is too high to join this race.",
+            "RACE_STARTED": "The race has already started",
+            "NO_MONEY": "You don't have enough money to pay the entry fee."
+        },
+        "FAILED_READY_RACE": {
+            "TITLE": "Failed to ready up for race",
+            "EXIT_VEHICLE": "You need to exit your vehicle to ready up.",
+            "NOT_DRIVING": "You need to be driving a vehicle to ready up.",
+            "NEED_STATIONARY": "You need to be stationary to ready up."
+        },
+        "RACE_INVITE": {
+            "TITLE": "You have been invited to a race",
+            "DESCRIPTION": "{host} has invited you to join the race {raceName}.",
+            "BUTTONS": {
+                "ACCEPT": "Accept",
+                "DECLINE": "Decline"
+            }
+        },
+        "VEHICLE_BLACKLISTED": {
+            "TITLE": "Vehicle not allowed",
+            "DESCRIPTION": "The vehicle you are using is blacklisted from racing"
+        }
+    },
+    "POPUPS": {
+        "GET_BACK_VEHICLE": "Get back in your vehicle",
+        "DNF_IN": "You will be marked as DNF in {time}s",
+        "DNF": "You have been marked as DNF",
+        "DISQUALIFIED_IN": "You will be disqualified in {time}s",
+        "DISQUALIFIED": "You have been disqualified from the race",
+        "YOU_FINISHED": "You finished {position}{ordinal}!",
+        "TIME": "Time: {time}",
+        "PLAYERS_READY": "{ready}/{total} drivers ready",
+        "PLAYERS_READY_NO_TOTAL": "{ready} drivers ready",
+        "STARTS_IN": "Race starts in {time}s",
+        "CANCELS_IN": "Race will be canceled in {time}s",
+        "STARTS_SHORTLY": "Race starts shortly"
+    }
+}
