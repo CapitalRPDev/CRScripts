@@ -13,7 +13,7 @@ Config.Convert = true -- convert data from detected race scripts? Supported: rah
 --[[ APP OPTIONS ]]--
 
 Config.Standalone = {}
-Config.Standalone.Enabled = true -- enable standalone racing tablet? "auto" = will enable if neither lb-phone nor lb-tablet is installed
+Config.Standalone.Enabled = "auto" -- enable standalone racing tablet? "auto" = will enable if neither lb-phone nor lb-tablet is installed
 Config.Standalone.RequireItem = "racing_tablet"
 Config.Standalone.Command = "racingtablet" -- command to open the racing tablet
 Config.Standalone.Bind = "F4"
@@ -34,13 +34,13 @@ Config.App.BlacklistedJobs = {
 }
 
 Config.App.LBPhone = true -- add the app to lb-phone?
-Config.App.LBTablet = true -- add the app to lb-tablet?
+Config.App.LBTablet = false -- add the app to lb-tablet?
 
 --[[ FRAMEWORK & STYLE OPTIONS ]]--
 
 Config.Framework = "auto"
 Config.HelpTextStyle = "default" -- "default", "ox_lib" or "gta". You can customize this further in client/custom/functions/functions.lua, `DrawHelpText` & `ClearHelpText`
-Config.NotificationSystem = "auto" -- "auto", "ox_lib", "gta", "esx" or "qb". You can customize this further in client/custom/functions/functions.lua, `Notify`
+Config.NotificationSystem = "ox_lib" -- "auto", "ox_lib", "gta", "esx" or "qb". You can customize this further in client/custom/functions/functions.lua, `Notify`
 Config.Units = "auto" -- "imperial", "metric" or "auto" (GTA settings). You can customized this further in client/custom/functions/functions.lua, `ShouldUseImperial`
 
 --[[ HUD OPTIONS ]]--
