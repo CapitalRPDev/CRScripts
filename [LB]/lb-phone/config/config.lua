@@ -2,7 +2,7 @@ Config = {}
 Config.Debug = false -- Set to true to enable debug mode
 
 Config.Logs = {}
-Config.Logs.Enabled = false
+Config.Logs.Enabled = true
 -- Use code "LBLOGS" for 20% off the https://fivemanage.com/ Logs Pro plan.
 Config.Logs.Service = "discord" -- fivemanage, discord or ox_lib. if discord, set your webhook in server/apiKeys.lua
 Config.Logs.Avatar = false -- attempt to get the player's avatar for discord logging?
@@ -45,7 +45,7 @@ Config.QBOldJobMethod = false -- use the old method to check job in qb-core? thi
 
 Config.Item = {}
 -- If you want to set up multiple items & frame colours, see https://docs.lbscripts.com/phone/configuration/#multiple-items--colored-phones
-Config.Item.Require = false -- require a phone item to use the phone
+Config.Item.Require = true -- require a phone item to use the phone
 Config.Item.Name = "phone" -- name of the phone item
 -- Config.Item.Names = {
 --     {
@@ -267,7 +267,7 @@ Config.CustomApps = {} -- https://docs.lbscripts.com/phone/custom-apps/
 Config.Valet = {}
 Config.Valet.Enabled = true -- allow players to get their vehicles from the phone
 Config.Valet.VehicleTypes = { "car", "vehicle" }
-Config.Valet.Price = 100 -- price to get your vehicle
+Config.Valet.Price = 300 -- price to get your vehicle
 Config.Valet.Model = `S_M_Y_XMech_01`
 Config.Valet.Drive = true -- should a ped bring the car, or should it just spawn in front of the player?
 Config.Valet.DisableDamages = false -- disable vehicle damages (engine & body health) on esx
@@ -591,9 +591,9 @@ Config.CityName = "Los Santos" -- The name that's being used in the weather app 
 Config.RealTime = true -- if true, the time will use real life time depending on where the user lives, if false, the time will be the ingame time.
 Config.CustomTime = false -- NOTE: disable Config.RealTime if using this. you can set this to a function that returns custom time, as a table: { hour = 0-24, minute = 0-60 }
 
-Config.EmailDomain = "lbscripts.com"
-Config.AutoCreateEmail = false -- should the phone automatically create an email for the player when they set up the phone?
-Config.DeleteMail = true -- allow players to delete mails in the mail app?
+Config.EmailDomain = "capital.com"
+Config.AutoCreateEmail = true -- should the phone automatically create an email for the player when they set up the phone?
+Config.DeleteMail = false -- allow players to delete mails in the mail app?
 Config.ConvertMailToMarkdown = true -- convert mails from html to markdown?
 
 Config.DeleteMessages = true -- allow players to delete messages in the messages app?
